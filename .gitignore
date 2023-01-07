@@ -11,6 +11,9 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
+node_modules/
+.gitignore
+.elasticbeanstalk/
 
 .idea/
 .ionic/
