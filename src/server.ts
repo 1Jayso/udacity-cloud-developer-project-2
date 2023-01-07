@@ -10,7 +10,7 @@ import { Router, Request, Response } from "express";
   const app = express();
 
   // Set the network port
-  const port = process.env.PORT || 80;
+  const port = process.env.PORT || 8082;
   
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
