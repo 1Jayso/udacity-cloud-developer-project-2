@@ -15,6 +15,13 @@ import { Router, Request, Response } from "express";
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
 
+  // Root Endpoint
+  // Displays a simple message to the user
+  app.get( "/", async ( req, res ) => {
+        res.send("try GET /filteredimage?image_url={{}}"); 
+  } );
+
+
   // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
 
   const authHeader = 'Ocp-Apim-Subscription-Key';
@@ -33,7 +40,7 @@ import { Router, Request, Response } from "express";
   }
   
 
- app.use(checkAuth);
+  app.use(checkAuth);
  app.get('/filteredimage', async (req: Request, res: Response) =>
   {
     const img_url = req.query.image_url.toString();
@@ -54,11 +61,7 @@ import { Router, Request, Response } from "express";
 
   //! END @TODO1
   
-  // Root Endpoint
-  // Displays a simple message to the user
-  app.get( "/", async ( req, res ) => {
-    res.send("try GET /filteredimage?image_url={{}}")
-  } );
+
   
 
   // Start the Server
