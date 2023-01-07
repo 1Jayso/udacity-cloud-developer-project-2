@@ -13,7 +13,7 @@ import { Router, Request, Response } from "express";
   const port = process.env.PORT || 8082;
   
   // Use the body parser middleware for post requests
-  app.use(bodyParser.json());
+  // app.use(bodyParser.json());
 
   // Root Endpoint
   // Displays a simple message to the user
