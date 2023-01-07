@@ -10,6 +10,7 @@ const axios = require('axios');
 // RETURNS
 //    an absolute path to a filtered image locally saved file
 
+
 export async function filterImageFromURL(inputURL: string): Promise<string> {
   return new Promise(async (resolve, reject) => {
     try {
@@ -18,7 +19,7 @@ export async function filterImageFromURL(inputURL: string): Promise<string> {
           url: inputURL,
           responseType: 'arraybuffer'
       })
-      .then(async ({data: imageBuffer}) => {
+      .then(async ({data: imageBuffer}: {data: Buffer}) => {
         const photo = await Jimp.read(imageBuffer);
         const outpath =
           "/tmp/filtered." + Math.floor(Math.random() * 2000) + ".jpg";
