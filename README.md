@@ -1,6 +1,6 @@
 # Udacity Project 2
 
-Project submission
+## Project submission
 
 Elasticbeanstalk URL for root endpoint: http://cloud-developer-project-2-dev.us-east-1.elasticbeanstalk.com/
 
