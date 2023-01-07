@@ -17,7 +17,7 @@ import { Router, Request, Response } from "express";
 
   // Root Endpoint
   // Displays a simple message to the user
-  app.get( "/", async ( req, res ) => {
+  app.get( "/", async ( req: Request, res: Response ) => {
         res.send("try GET /filteredimage?image_url={{}}"); 
   } );
 
@@ -58,8 +58,6 @@ import { Router, Request, Response } from "express";
       deleteLocalFiles([filter_img]);
     });
   });
-
-
   //! END @TODO1
   
 
