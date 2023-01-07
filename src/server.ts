@@ -27,7 +27,7 @@ import { Router, Request, Response } from "express";
   const authHeader = 'Ocp-Apim-Subscription-Key';
 
   // middleware function to check for the auth header
-  function checkAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
+  function checkAuth(req: Request, res: Response, next: NextFunction) {
     const apiKey = req.header(authHeader);
     if (!apiKey) {
       return res.status(401).send('Unauthorized');

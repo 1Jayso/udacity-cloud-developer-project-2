@@ -2,7 +2,7 @@
 
 ## Project Submission
 
-This project is part of udacity cloud developer nanodegree - [Repository](https://github.com/1Jayso/udacity-cloud-developer-project-2)
+This project is part of udacity cloud developer nanodegree - [Repository URL](https://github.com/1Jayso/udacity-cloud-developer-project-2)
 
 Elasticbeanstalk URL for root endpoint: http://cloud-developer-project-2-dev.us-east-1.elasticbeanstalk.com/
 
