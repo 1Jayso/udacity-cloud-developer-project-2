@@ -1,6 +1,6 @@
 # Udacity Project 2
 
-This project is part of udacity cloud developer nanodegree - Repository link
+Project submission
 
 Elasticbeanstalk URL for root endpoint: http://cloud-developer-project-2-dev.us-east-1.elasticbeanstalk.com/
 
